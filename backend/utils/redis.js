@@ -42,8 +42,11 @@ class RedisMock {
   }
 }
 
+const Redis = require('ioredis');
+
 const isDev = process.env.NODE_ENV !== 'production';
-const redis = isDev ? new RedisMock() : new require('ioredis')(process.env.REDIS_URL);
-redis.on('connect', () => console.log('Connected to Redis successful (Mocked)'));
+const redis = isDev ? new RedisMock() : new Redis(process.env.REDIS_URL);
+
+redis.on('connect', () => console.log('Connected to Redis successful'));
 
 module.exports = redis;
