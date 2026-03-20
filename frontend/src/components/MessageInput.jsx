@@ -40,7 +40,7 @@ export default function MessageInput({ onSendMessage, onTyping }) {
   }, []);
 
   return (
-    <div className="p-4 bg-slate-900/40 border-t border-white/5 backdrop-blur-md">
+    <div className="p-4 border-t border-white/5">
       <form 
         onSubmit={handleSubmit}
         className="flex items-end gap-2 max-w-4xl mx-auto relative glass-panel rounded-2xl p-1 pr-2"
@@ -69,7 +69,7 @@ export default function MessageInput({ onSendMessage, onTyping }) {
         <button
           type="submit"
           disabled={!text.trim()}
-          className="p-2.5 mb-0.5 rounded-xl bg-indigo-500 text-white disabled:opacity-50 disabled:bg-slate-700 transition-colors flex items-center justify-center cursor-pointer"
+          className="glass-button p-2.5 mb-1 mr-1 rounded-xl text-indigo-300 disabled:opacity-50 disabled:text-slate-500 flex items-center justify-center cursor-pointer"
         >
           <Send className="w-4 h-4 ml-0.5" />
         </button>

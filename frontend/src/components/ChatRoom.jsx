@@ -62,10 +62,10 @@ export default function ChatRoom({ username }) {
   };
 
   return (
-    <div className="w-full h-[90vh] max-w-6xl mx-auto glass-panel rounded-3xl overflow-hidden flex shadow-2xl border border-white/10">
+    <div className="w-full h-[90vh] max-w-6xl mx-auto glass-panel rounded-3xl overflow-hidden flex">
       <Sidebar users={users} currentUser={username} />
-      <div className="flex-1 flex flex-col bg-slate-950/40 relative">
-        <div className="h-16 border-b border-white/5 flex items-center px-6 bg-slate-900/50 backdrop-blur-md sticky top-0 z-10">
+      <div className="flex-1 flex flex-col relative">
+        <div className="h-16 border-b border-white/5 flex items-center px-6 sticky top-0 z-10">
           <h2 className="text-lg font-semibold text-white/90">Local Network Chat</h2>
           <div className="ml-auto flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.5)]"></span>

@@ -36,7 +36,7 @@ export default function Login({ onLogin }) {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Choose a username..."
-            className="w-full bg-slate-900/50 border border-slate-700/50 rounded-xl px-4 py-3.5 outline-none focus:border-indigo-500 transition-colors text-white placeholder:text-slate-500"
+            className="glass-input w-full rounded-xl px-4 py-3.5 outline-none text-white placeholder:text-slate-400 font-medium"
             maxLength={20}
             required
             autoFocus
@@ -48,10 +48,10 @@ export default function Login({ onLogin }) {
           disabled={!name.trim()}
           className="glass-button w-full py-3.5 rounded-xl flex items-center justify-center gap-2 font-medium disabled:opacity-50 disabled:cursor-not-allowed group relative overflow-hidden text-indigo-100"
         >
-          <span className="relative z-10 flex items-center gap-2">
-            Join Chat <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          <span className="relative z-10 flex items-center gap-2 drop-shadow-md">
+            Enter Nexus <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </span>
-          <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/40 to-purple-600/40 opacity-0 group-hover:opacity-100 transition-opacity" />
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity" />
         </button>
       </form>
     </motion.div>

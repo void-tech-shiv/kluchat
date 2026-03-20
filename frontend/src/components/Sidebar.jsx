@@ -2,7 +2,7 @@ import { Users, Wifi, Circle } from 'lucide-react';
 
 export default function Sidebar({ users, currentUser }) {
   return (
-    <div className="w-64 border-r border-white/5 bg-slate-900/60 flex-col hidden md:flex">
+    <div className="w-64 border-r border-white/5 flex-col hidden md:flex">
       <div className="h-16 border-b border-white/5 flex items-center px-6">
         <Wifi className="w-5 h-5 text-indigo-400 mr-3" />
         <h2 className="font-semibold tracking-wide text-white">Network Room</h2>
